@@ -1,0 +1,14 @@
+name: Alert test
+on: 
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: New PR
+      uses: ViniciusSantos31/github-alert-discord@v1
+      with:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
