@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: New PR
-      uses: ViniciusSantos31/github-alert-discord@v1.1.1
+      uses: ViniciusSantos31/github-alert-discord@v1.1.2
       with:
         webhook: ${{ secrets.DISCORD_WEBHOOK }}
         username: GitHub PR
