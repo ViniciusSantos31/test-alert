@@ -1,6 +1,7 @@
 name: Alert test
 on: 
   pull_request:
+    types: [opened, closed]
     branches:
       - dev
 
@@ -9,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Notify Discord
-      uses: ViniciusSantos31/github-alert-discord@v1.1.17
+      uses: ViniciusSantos31/github-alert-discord@v1.1.18
       with:
         webhook: ${{ secrets.DISCORD_WEBHOOK }}
-        username: GitHub Watcher
-        avatar_url: https://avatars.githubusercontent.com/u/41171735?v=4
