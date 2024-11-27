@@ -8,9 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: New PR
-      uses: ViniciusSantos31/github-alert-discord@v1.1.2
+    - name: Notify Discord
+      uses: ViniciusSantos31/github-alert-discord@v1.1.3
       with:
         webhook: ${{ secrets.DISCORD_WEBHOOK }}
-        username: GitHub PR
+        username: GitHub Watcher
         avatar_url: https://avatars.githubusercontent.com/u/41171735?v=4
