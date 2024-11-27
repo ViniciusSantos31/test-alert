@@ -12,3 +12,5 @@ jobs:
       uses: ViniciusSantos31/github-alert-discord@v1.1
       with:
         webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        username: GitHub PR
+        avatar_url: https://avatars.githubusercontent.com/u/41171735?v=4
